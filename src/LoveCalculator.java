@@ -21,6 +21,15 @@ public class LoveCalculator {
 
         // Display the calculated love score
         System.out.println("Love Score: " + loveScore);
+
+        // Determine the appropriate message based on the love score
+            if (loveScore < 10 || loveScore > 90) {
+            System.out.println("Your score is " + loveScore + ", you go together like coke and mentos.");
+        } else if (loveScore >= 40 && loveScore <= 50) {
+            System.out.println("Your score is " + loveScore + ", you are alright together.");
+        } else {
+            System.out.println("Your score is " + loveScore);
+        }
     }
 
     // Function to count the occurrences of a target string within another string
